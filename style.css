@@ -1,0 +1,264 @@
+/* =========================
+   COMMON STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #172554;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   HOME PAGE
+   index.html
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-card {
+    background-color: white;
+    width: 270px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.dashboard-card p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn,
+button {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover,
+button:hover {
+    background-color: #172554;
+}
+
+/* =========================
+   PATIENT PAGE
+   patients.html
+========================= */
+
+.page-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.page-container h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   FORMS
+   patients.html
+   appointments.html
+========================= */
+
+form {
+    max-width: 650px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* =========================
+   DOCTOR PAGE
+   doctors.html
+========================= */
+
+.doctor-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.doctor-card {
+    width: 280px;
+    padding: 25px;
+    background-color: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.doctor-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.doctor-card p {
+    margin-bottom: 10px;
+}
+
+.available {
+    display: inline-block;
+    background-color: #16a34a;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 50px;
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .page-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .dashboard-card {
+        width: 90%;
+    }
+
+    .doctor-card {
+        width: 90%;
+    }
+}
